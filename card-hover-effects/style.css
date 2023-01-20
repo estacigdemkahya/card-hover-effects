@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: rgb(58, 53, 70);
+    background: #cc00ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ body {
 }
 
 .container .card:hover .face.face1 {
-    background: #00ff9d;
+    background: #cc00ff;
     transform: translateY(0);
 }
 
