@@ -1,19 +1,20 @@
 body {
+
+    background: #333;
+    display: flex;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #cc00ff;
-    display: flex;
+    font-family: 'Courier New', Courier, monospace;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
-    width: 1000px;
-    position: relative;
     display: flex;
+    width: 1000px;
     justify-content: space-between;
+    position: relative;
 }
 
 .container .card {
@@ -22,18 +23,18 @@ body {
 }
 
 .container .card .face {
-    width: 300px;
     height: 200px;
+    width: 300px;
     transition: 0.5s;
 }
 
 .container .card .face.face1 {
-    position: relative;
     background: #2e2a36;
+    position: relative;
+    z-index: 1;
     display: flex; 
     justify-content: center;
     align-items: center;
-    z-index: 1;
     transform: translateY(100px);
 }
 
@@ -56,20 +57,20 @@ body {
 }
 
 .container .card .face.face1 .content h3 {
+    color: black;
     margin: 10px 0 0;
     padding: 0;
-    color: black;
-    text-align: center;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .container .card .face.face2 {
-    position: relative;
     background: #000;
-    display: flex;
+    padding: 20px;
+    position: relative;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    display: flex;
     box-sizing: border-box;
     box-shadow: 0 20px 50px #000;
     transform: translateY(-100px);
@@ -86,19 +87,18 @@ body {
 }
 
 .container .card .face.face2 .content a {
+    color: #000;
+    background: #00ff9d;
     margin: 15px 0 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
-    color: #000;
     padding: 5px;
-    background: #00ff9d;
-    /*border: 1px solid #3a3546;*/
 }
 
 .container .card .face.face2 .content a:hover {
-    background: #000;
     color: #00ff9d;
+    background: #000;
     border: 1px solid #00ff9d;
     border-radius: 20px 20px 20px 20px;
 }
